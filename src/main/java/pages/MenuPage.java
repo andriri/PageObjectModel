@@ -17,6 +17,7 @@ public class MenuPage {
 	public By loginLink = By.linkText("Login");
 	public By contactsLink = By.linkText("CONTACTS");
 	public By shopLink = By.linkText("BOOKS");
+	public By blogLink = By.linkText("BLOG");
 	
 //	cum scriam inainte
 	
@@ -38,4 +39,5 @@ public class MenuPage {
 	//navigateTo(loginLink)
 	//navigateTo(contactsLink)
 	//navigateTo(shopLink)
+	//navigateTo(blogLink)
 }
