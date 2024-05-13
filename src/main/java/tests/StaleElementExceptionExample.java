@@ -30,6 +30,8 @@ public class StaleElementExceptionExample extends BaseTest{
 		//ca urmare a refresh-ului se genereaza un nou id de sesiune
 		Thread.sleep(5000);
 		
+		//fix pt staleElement
+		 //asociat cu vechea sesiune dinainte de refresh
 		element = driver.findElement(By.name("orderby"));
 		select = new Select(element); //primeste elementul de mai sus
 		select.selectByVisibleText("Sort by latest");
