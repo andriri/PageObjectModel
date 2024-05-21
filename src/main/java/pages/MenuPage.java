@@ -21,7 +21,11 @@ public class MenuPage {
 	public By shopLink = By.linkText("BOOKS");
 	public By aboutLink = By.linkText("ABOUT");
 	public By blogLink = By.linkText("BLOG");
-	
+	public By userName = By.xpath("//span[@class='user_name']");
+	public By settings = By.xpath("//a[@class='icon icon-cog']");
+	public By adresses = By.xpath("//a[contains(text(), 'Addresses')]");
+	public By addAddress = By.xpath("//a[@class='edit'][contains(text(), 'Add')]");
+	//WebElement settings = driver.findElement(By.xpath("//a[@class='icon icon-cog']"));
 	
 	
 //	cum scriam inainte
