@@ -24,6 +24,7 @@ public WebDriver driver;
 	public By postComment = By.cssSelector("div[class='comment']");
 	
 	public By resultText = By.cssSelector("div[class='comment_not_approved']");
+	public By blogPostFormats = By.cssSelector("a[href='https://keybooks.ro/category/post-formats/'][contains(text(), 'Post Formats')]");
 	
 	public void blogInApp() {
 		
