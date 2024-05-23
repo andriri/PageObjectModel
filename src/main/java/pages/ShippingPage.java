@@ -8,9 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 
 
 public class ShippingPage {
-
-	public By countryCanada = By.xpath("//span[@title='Canada']");
-	public By provinceNL = By.xpath("//span[@title='Newfoundland and Labrador']");
+	
+	public By billingCountry = By.xpath("//select[@name='shipping_country']");
+    public By billingState = By.xpath("//select[@name='shipping_state']");
 	 
 	
 	public WebDriver driver;
@@ -33,5 +33,12 @@ public class ShippingPage {
 		Select selectDropdown = new Select(province);
 		selectDropdown.selectByValue(provinceName);
 	}
+	
+	public String getCurrentSelectedOption(By locator) {
+        WebElement element = driver.findElement(locator);
+        Select selectDropdown = new Select(element);
+        return selectDropdown.getFirstSelectedOption().getText();
+
+   }
 		
 }

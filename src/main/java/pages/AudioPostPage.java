@@ -14,8 +14,9 @@ public class AudioPostPage {
 	this.driver = driver;
 }
 	//identify slider elements
-	public By sliderInitialPosition = By.xpath("//span[@style='left: 0%;']");  //Play button
-	public By sliderFinalPosition = By.xpath("//span[@style='left: 100%;']");  //Mute button
+	public By playButton = By.xpath("//div[@class='mejs-button mejs-playpause-button mejs-play']");
+	public By audioBar = By.xpath("//div[@class='mejs-button mejs-playpause-button mejs-play']");
+	public By volumeBar = By.xpath("//div[@class='mejs-horizontal-volume-total']");
 	
 	public void dragAndDrop(By locator, int x, int y) {
 		

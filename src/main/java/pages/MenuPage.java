@@ -20,7 +20,8 @@ public class MenuPage {
 	public By contactsLink = By.linkText("CONTACTS");
 	public By shopLink = By.linkText("BOOKS");
 	public By aboutLink = By.linkText("ABOUT");
-	public By blogLink = By.linkText("BLOG");
+	//public By blogLink = By.linkText("BLOG");
+	public By blogLink = By.xpath("//a[@class='sf-with-ul'][contains(text(), 'Blog')]");
 	public By userName = By.xpath("//span[@class='user_name']");
 	public By settings = By.xpath("//a[@class='icon icon-cog']");
 	public By adresses = By.xpath("//a[contains(text(), 'Addresses')]");

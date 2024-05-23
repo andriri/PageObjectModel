@@ -15,7 +15,7 @@ public WebDriver driver;
 		this.driver = driver;
 	}
 	
-		
+	public By blogHover = By.xpath("a[contains(text(), 'Blog')]");	
 	public By blogClassic = By.cssSelector("a[href='https://keybooks.ro/category/classic/']");
 	public By blogPost = By.cssSelector("a[href='https://keybooks.ro/2016/02/02/15-amazing-things-about-reading-in-the-fall/']");
 	public By commentInput = By.id("comment");
@@ -24,7 +24,9 @@ public WebDriver driver;
 	public By postComment = By.cssSelector("div[class='comment']");
 	
 	public By resultText = By.cssSelector("div[class='comment_not_approved']");
-	public By blogPostFormats = By.cssSelector("a[href='https://keybooks.ro/category/post-formats/'][contains(text(), 'Post Formats')]");
+	public By blogPostFormats = By.cssSelector("a[href='https://keybooks.ro/category/post-formats/']");
+	public By audioPost = By.cssSelector("a[href='https://keybooks.ro/2016/02/02/audio-post/']");
+
 	
 	public void blogInApp() {
 		
@@ -45,6 +47,7 @@ public WebDriver driver;
 		//getText(), "Your comment is awaiting moderation.");
 	
 	}
+	
 	
 //    // Write a comment
 //    WebElement commentInput = driver.findElement(By.id("comment"));

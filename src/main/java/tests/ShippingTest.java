@@ -34,12 +34,12 @@ public class ShippingTest extends BaseTest{
 		menu.navigateTo(menu.addAddress);
 		shipping.filterByCountry(41);
 		Thread.sleep(2000);
-		WebElement countryElement = driver.findElement(shipping.countryCanada);
-		Assert.assertEquals(countryElement.getText(), "Canada");
+		String countryElement = shipping.getCurrentSelectedOption(shipping.billingCountry);
+		Assert.assertEquals(countryElement, "Canada");
 		shipping.filterByProvince("NL");
 		Thread.sleep(2000);
-		WebElement provinceText = driver.findElement(shipping.provinceNL);
-		Assert.assertEquals(provinceText.getText(), "Newfoundland and Labrador");
+		String provinceText = shipping.getCurrentSelectedOption(shipping.billingState);
+		Assert.assertEquals(provinceText, "Newfoundland and Labrador");
 	
 		//login.logoutFromApp();
 			
