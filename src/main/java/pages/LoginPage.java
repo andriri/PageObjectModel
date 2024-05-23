@@ -18,11 +18,14 @@ public WebDriver driver;
 	public By successLoginMessage = By.cssSelector("div[class*='sc_infobox_style_success']");
 	public By errorLoginMessage = By.cssSelector("div[class*='sc_infobox_style_error']");
 	public By logoutButton = By.linkText("Logout");
+	public By closePopUpButton = By.className("popup_close");
 	
 	
 	public void loginInApp(String user, String pass) {
 		
+		driver.findElement(userField).clear();
 		driver.findElement(userField).sendKeys(user);
+		driver.findElement(passField).clear();
 		driver.findElement(passField).sendKeys(pass);
 		driver.findElement(submitButton).click();
 	}
@@ -34,10 +37,13 @@ public WebDriver driver;
 		return driver.findElement(locator).isDisplayed();
 		
 	}
-	
-	
+		
 	public void logoutFromApp() {
 		
 		driver.findElement(logoutButton).click();
+	}
+	
+	public void closeLoginPopUp() {
+		driver.findElement(closePopUpButton).click();
 	}
 }
