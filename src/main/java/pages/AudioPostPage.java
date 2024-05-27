@@ -15,7 +15,7 @@ public class AudioPostPage {
 }
 	//identify slider elements
 	public By playButton = By.xpath("//div[@class='mejs-button mejs-playpause-button mejs-play']");
-	public By audioBar = By.xpath("//div[@class='mejs-button mejs-playpause-button mejs-play']");
+	public By audioBar = By.xpath("//span[@class='mejs-time-current']");
 	public By volumeBar = By.xpath("//div[@class='mejs-horizontal-volume-total']");
 	
 	public void dragAndDrop(By locator, int x, int y) {
