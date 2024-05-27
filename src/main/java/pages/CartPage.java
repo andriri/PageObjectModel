@@ -21,11 +21,4 @@ public class CartPage {
 		this.driver = driver;
 	}
 		
-	public void filterByCountry(int countryIndex) {
-		//Country dropdown list
-		WebElement country = driver.findElement(By.xpath("//select[@name='shipping_country']"));
-		Select selectDropdown = new Select(country);
-		selectDropdown.selectByIndex(countryIndex);
-		}
-		
 }

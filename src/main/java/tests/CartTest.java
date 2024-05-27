@@ -26,8 +26,8 @@ public class CartTest extends OrderBookTest{
 		
 		MenuPage menu = new MenuPage(driver);
 		CartPage cart = new CartPage(driver);
-/*		BookSearchPage search = new BookSearchPage(driver);
-		
+		//BookSearchPage search = new BookSearchPage(driver);
+		/*
 
 		menu.navigateTo(menu.searchButton);
 		menu.sendText(menu.searchField, bookToBeOrdered+Keys.ENTER);
@@ -41,7 +41,8 @@ public class CartTest extends OrderBookTest{
 		menu.navigateTo(search.viewCart);
 		String currentCartURL = driver.getCurrentUrl();
 		Assert.assertEquals(currentCartURL, cartURL);
-*/		
+	*/
+	
 		Thread.sleep(5000);
 		menu.navigateTo(cart.increaseQuantity);
 		menu.navigateTo(cart.updateCartButton);
@@ -50,8 +51,8 @@ public class CartTest extends OrderBookTest{
 		menu.navigateTo(cart.proccedToCheckoutButton);
 		String currentCheckoutURL = driver.getCurrentUrl();
 		Assert.assertEquals(currentCheckoutURL, checkoutURL);
-		boolean biilingDetails = driver.findElement(cart.billingDetails).isDisplayed();
-		if (biilingDetails) { System.out.println("Billing Details information is displayed in Cart");
+		boolean billingDetails = driver.findElement(cart.billingDetails).isDisplayed();
+		if (billingDetails) { System.out.println("Billing Details information is displayed in Cart");
 		}
 		else { System.err.println("Billing Details information is NOT displayed in Cart");
         System.exit(1);
