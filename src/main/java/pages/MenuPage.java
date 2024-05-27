@@ -26,6 +26,9 @@ public class MenuPage {
 	public By settings = By.xpath("//a[@class='icon icon-cog']");
 	public By adresses = By.xpath("//a[contains(text(), 'Addresses')]");
 	public By addAddress = By.xpath("//a[@class='edit'][contains(text(), 'Add')]");
+	public By searchButton = By.xpath("//button[@type='submit']");
+	public By searchField = By.xpath("//input[@placeholder='Search']");
+	
 	//WebElement settings = driver.findElement(By.xpath("//a[@class='icon icon-cog']"));
 	
 	
@@ -44,6 +47,14 @@ public class MenuPage {
 	
 	public void navigateTo(By locator) {
 		driver.findElement(locator).click();
+	}
+	
+	public void sendText(By locator, String text) {
+		driver.findElement(locator).sendKeys(text);
+	}
+	
+	public void getText(By locator) {
+		driver.findElement(locator).getText();
 	}
 	
 	//navigateTo(loginLink)
