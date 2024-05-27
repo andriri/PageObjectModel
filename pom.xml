@@ -19,7 +19,12 @@
 	    <artifactId>selenium-java</artifactId>
 	    <version>4.19.1</version>
 	</dependency>
-	
-  </dependencies>
+
+	<dependency>
+		<groupId>CursSelenium</groupId>
+		<artifactId>CursSelenium</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+   </dependencies>
   
 </project>
