@@ -15,7 +15,8 @@ public WebDriver driver;
 		this.driver = driver;
 	}
 	
-	public By blogHover = By.xpath("a[contains(text(), 'Blog')]");	
+	//public By blogHover = By.xpath("a[contains(text(), 'Blog')]");	
+	public By blogHover = By.xpath("li[id='menu-item-76']");	
 	public By blogClassic = By.cssSelector("a[href='https://keybooks.ro/category/classic/']");
 	public By blogPost = By.cssSelector("a[href='https://keybooks.ro/2016/02/02/15-amazing-things-about-reading-in-the-fall/']");
 	public By commentInput = By.id("comment");

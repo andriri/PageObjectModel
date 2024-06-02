@@ -32,7 +32,7 @@ public class BaseTest {
 		driver.manage().window().maximize(); //mereu pornim pagina web pe pagina maximizata
 											 //pentru a gasi toate butoanele cu locatorii (e diferit pe telefon vs monitor)
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		//driver.get("https://keybooks.ro/");
+		driver.get("https://keybooks.ro/");
 		
 		
 	}

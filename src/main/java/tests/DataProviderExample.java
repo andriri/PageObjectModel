@@ -26,7 +26,7 @@ public class DataProviderExample  extends BaseTest{
 	@DataProvider  //intoarce mereu un array in 2 dimensiuni
 	public Object[][] loginTestData() {
 		
-		Object[][] data = new Object[4][3];  //rulez 4 seturi de date cu cate 2 valori fiecare
+		Object[][] data = new Object[4][3];  //rulez 4 seturi de date cu cate 3 valori fiecare
 		
 		data[0][0] = user;  //set de date valid
 		data[0][1] = pass;
