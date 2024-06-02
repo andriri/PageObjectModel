@@ -21,6 +21,7 @@ public class MenuPage {
 	public By shopLink = By.linkText("BOOKS");
 	public By aboutLink = By.linkText("ABOUT");
 	//public By blogLink = By.linkText("BLOG");
+	public By eventsLink = By.linkText("EVENTS");
 	public By blogLink = By.xpath("//a[@class='sf-with-ul'][contains(text(), 'Blog')]");
 	public By userName = By.xpath("//span[@class='user_name']");
 	public By settings = By.xpath("//a[@class='icon icon-cog']");
