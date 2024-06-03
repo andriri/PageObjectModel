@@ -45,14 +45,14 @@ public class BaseTest {
 		
 		
 	}
-	//@AfterClass
+	//@AfterMethod
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(5000); //lasa browserul deschis 5000 secunde
 		driver.quit(); //inchide toate taburile
 		//driver.close();//inchide tabul curent
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void recordFailure(ITestResult result) {   //listener
 		//metoda se va executa dupa rularea fiecarei metode @Test
 		//daca metoda este FAILED -> doar atunci face poza
