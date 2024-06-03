@@ -17,11 +17,11 @@ public class ScreenshotTest extends BaseTest {
 		menu.navigateTo(menu.shopLink);
 		Screenshots sc = new Screenshots();
 		sc.takeScreenShot(driver);
-		assertEquals(driver.getCurrentUrl(), "https://keybooks.ro/shop-2/"));
+		assertEquals(driver.getCurrentUrl(), "https://keybooks.ro/shop-2/");
 		
 	}catch (Exception e) {
 	
-	Screenshots sc = new Screenshots;
+	Screenshots sc =  (Screenshots) driver;
 	sc.takeScreenShot(driver);
 	}
 }

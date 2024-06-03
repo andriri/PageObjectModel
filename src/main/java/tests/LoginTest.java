@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest{
 		LoginPage login = new LoginPage(driver);
 				
 		menu.navigateTo(menu.loginLink);
-		login.loginInApp(user, pass);		
+		login.loginInApp(user, "something wrong");		
 		
 		assertTrue(login.checkMsgIsDisplayed(login.successLoginMessage));
 		login.logoutFromApp();
