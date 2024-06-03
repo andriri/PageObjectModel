@@ -35,7 +35,7 @@ public class JSExecutorBlog extends BaseTest {
 		String javaScriptHover = "var objObject = document.createEvent('MouseEvents');" + "objObject.initMouseEvent('mouseover',true);" + "arguments[0].dispatchEvent(objObject);";
 		jse.executeScript(javaScriptHover, blogMenu);
         
-        // Folosim JavaScript Executor pentru a face click pe link-ul Post Formats
+      
         jse.executeScript("arguments[0].click();", blog.blogPostFormats);
 		
 		jse.executeScript("arguments[0].scrollIntoView()", galleryFormatElement);
