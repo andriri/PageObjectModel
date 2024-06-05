@@ -3,7 +3,7 @@
     <test name="test" >
         
         <parameter name = "url" value = "https://keybooks.ro" />
-          <parameter name = "browser" value = "Edge" />
+          <parameter name = "browser" value = "Chrome" />
         
         <classes>
             <class name="tests.LoginTest" ></class>

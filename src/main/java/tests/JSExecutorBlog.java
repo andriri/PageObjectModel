@@ -44,6 +44,6 @@ public class JSExecutorBlog extends BaseTest {
 		jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		Thread.sleep(3000);
 		
-		
+		blog.postComment();
 	}
 }

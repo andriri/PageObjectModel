@@ -23,9 +23,14 @@ public WebDriver driver;
 	public By nameInput = By.id("input[id='author']");
     public By emailInput = By.id("input[id='email']");
 	public By postComment = By.cssSelector("div[class='comment']");
+	public By galerryFormatComment = By.cssSelector("div[class='comments_field comments_message']");
+	public By galerryFormatName = By.id("input[id='author']");  
+	public By galerryFormatPostComment = By.id("input[id='send_comment']");
 	
 	public By resultText = By.cssSelector("div[class='comment_not_approved']");
 	public By blogPostFormats = By.cssSelector("a[href='https://keybooks.ro/category/post-formats/']");
+	public By blogGalleryFormat = By.cssSelector("a[href='https://keybooks.ro/2016/02/01/gallery-format/']");
+
 	public By audioPost = By.cssSelector("a[href='https://keybooks.ro/2016/02/02/audio-post/']");
 
 	
@@ -49,6 +54,12 @@ public WebDriver driver;
 	
 	}
 	
+	public void postComment() {
+		driver.findElement(galerryFormatComment).sendKeys("Homework 23");
+		driver.findElement(galerryFormatName).sendKeys("Irina Andrei");
+		driver.findElement(emailInput).sendKeys("irinaandrei83@gmail.com");
+		driver.findElement(galerryFormatPostComment).click();
+	}
 	
 //    // Write a comment
 //    WebElement commentInput = driver.findElement(By.id("comment"));
